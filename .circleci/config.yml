@@ -10,8 +10,7 @@ jobs:
       - run:
           name: Check Twitter handles
           command: |
-            bundle config set --local path 'vendor/bundle'
-            bundle install
+            gem i twitter
             ruby twitter.rb
           working_directory: tests
 
