@@ -7,9 +7,9 @@ jobs:
     container: 2factorauth/twofactorauth:4.0
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Bundle install
         run: bundle install
-      - uses: actions/checkout@v2
       - uses: actions/cache@v2
         with:
           path: |
@@ -32,9 +32,9 @@ jobs:
     container: 2factorauth/twofactorauth:4.0
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: Bundle install
         run: bundle install
-      - uses: actions/checkout@v2
       - name: Generate API files
         run: |
           mkdir -p api/v1
