@@ -9,7 +9,10 @@ jobs:
 
       - run:
           name: Check Twitter handles
-          command: ruby twitter.rb
+          command: |
+            bundle config set --local path 'vendor/bundle'
+            bundle install
+            ruby twitter.rb
           working_directory: tests
 
       - run:
