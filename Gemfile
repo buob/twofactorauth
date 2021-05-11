@@ -17,4 +17,5 @@ group :test do
   gem 'kwalify'
   gem 'rubocop'
   gem 'json_schemer'
+  gem 'twitter'
 end
